@@ -51,7 +51,6 @@ object WardrobeAddon : Module(
 
 
     init {
-        println("WardrobeAddon settings: ${settings.keys}")
         on<GuiEvent.MouseClick> {
             val s = screen
             if (s is AbstractContainerScreen<*> && onClick(s, click.button())) cancel()
